@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+    background-image: url(./Img/fondo.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+header{
+    height: 300px;
+    background: url(img/header.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    color: #ffffff;
+    font-size: 90px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+header form{
+    width: 500px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+header form input{
+    width: 80%;
+    padding: 10px;
+    border: 0;
+    font-size: 25px;
+    outline: none;
+    color: #000000;
+    background-color: #85a2d6;
+}
+
+header form input::placeholder {
+    color: #000000;
+}
+
+header form button{
+    width: 20%;
+    border: 0;
+    background-color:#698dcf;
+    color: #131212;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#resultado-busqueda{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:40px
+}
+#resultado-busqueda img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        filter: contrast(130%);
+
+
+    }
+
+}
+#mostrar-mas{
+    border: 0;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background-color: #698dcf;
+    color: #000000;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: none;
+}
